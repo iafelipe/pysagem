@@ -1,8 +1,8 @@
 <div align="center">
 <img src=https://raw.githubusercontent.com/iafelipe/pysagem/e8b6af39428d590432e9a28c737f2d87f96e0198/assets/banner.svg width="650"/>
 
-![PyPI - Version](https://img.shields.io/pypi/v/pysagem)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysagem)
+[![PyPI - Version](https://img.shields.io/pypi/v/pysagem?color=green)](https://pypi.org/project/pysagem/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysagem?color=yellow)](https://pypi.org/project/pysagem/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 </div>
