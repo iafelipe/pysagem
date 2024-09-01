@@ -1,14 +1,15 @@
 <div align="center">
-<img src=assets/banner.svg width="650"/>
+<img src=https://raw.githubusercontent.com/iafelipe/pysagem/e8b6af39428d590432e9a28c737f2d87f96e0198/assets/banner.svg width="650"/>
 
-<!-- ![PyPI - Version](https://img.shields.io/pypi/v/pysagem) -->
+![PyPI - Version](https://img.shields.io/pypi/v/pysagem)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysagem)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 </div>
 
 ## What is pysagem?
 
-<em>pysagem</em> is a CLI application that lets you simulate biological invasions in dynamic landscapes. By providing an animation flag, it also lets you visualise the simulation.
+pysagem is a CLI application that lets you simulate biological invasions in dynamic landscapes. By providing an animation flag, it also lets you visualise the simulation. The name pysagem is a direct borrowing from the Portuguese <em>paisagem</em>, which means landscape and has a somewhat similar pronunciation.
 
 ## Dependencies
 - numpy
@@ -22,7 +23,11 @@ Also, for the animation to be generated, you need to have [ffmpeg](https://ffmpe
 
 ## Installation
 
-Soon, currently under development.
+pysagem can be installed with [pip](https://pip.pypa.io):
+
+```
+pip install pysagem
+```
 
 ## Usage
 
@@ -105,15 +110,13 @@ Take this parameter file named `params.txt` as an example:
 
 Running the command `pysagem @params.txt`:
 
-![pysagem demo terminal](assets/cmd-example.gif)
+![pysagem demo terminal](https://raw.githubusercontent.com/iafelipe/pysagem/main/assets/cmd-example.gif)
 
 The animation produced for this choice of parameters:
 
-![pysagem demo](assets/animation-example.gif)
+![pysagem demo](https://raw.githubusercontent.com/iafelipe/pysagem/main/assets/animation-example.gif)
 
 The animation is saved as an mp4 file. The length of the animation will depend on the number of generations.
-
-<!--- Describe the plot! --->
 
 ### Log file
 
@@ -212,6 +215,7 @@ src/
     ├── main.py
     ├── events.py
     ├── animation.py
+    ├── plotstyle.mplstyle
     └── utils.py
 ```
 
@@ -219,9 +223,8 @@ src/
 - The `events.py` file contains the functions that define the events that can occur during the simulation. 
 - The `animation.py` file contains the functions that generate the animation. 
 - The `cli.py` file contains the functions that parse the command line arguments and the parameter file.
+- The `plotstyle.mplstyle` file is a custom matplotlib style sheet for the animation plot. 
 - The `utils.py` file contains some helper functions for seeding the numba random number generator, writing the log file, and other utility functions.
-
-<!-- Feel free to fork the repository and modify the source code to suit your needs. -->
 
 ## License
 This project is under the GNU General Public License v3 (GPLv3).
